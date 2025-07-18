@@ -1,7 +1,10 @@
 ---
+import AboutComponent from '@components/about/AboutComponent.astro';
 import Navbar from '../../components/navbar/Navbar.astro';
 import { getStaticPaths, getI18nProps } from '../../i18n/helperi18n';
 import MainLayout from '../../layouts/MainLayout.astro';
+import ContactComponent from '@components/contact/ContactComponent.astro';
+
 
 export { getStaticPaths };
 
@@ -111,6 +114,15 @@ const { lang, t, title } = getI18nProps(Astro.params, 'home');
     </div>
 
   </div>
+
+
+  <div class="section">
+    <AboutComponent title={title} />
+  </div>
+
+
+  <ContactComponent title={title}/>
+
 
 
 </MainLayout>
