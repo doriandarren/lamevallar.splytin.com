@@ -10,10 +10,10 @@
     "map": "Map",
     "login": "Login"
   },
-  "home": {
+ "home": {
     "title": "Home",
-    "heading": "Welcome",
-    "description": "This is the English version."
+    "heading": "Welcome to La Meva Llar",
+    "description": "Tapas - Mediterranean style restaurant"
   },
   "about": {
     "title": "About Us",
