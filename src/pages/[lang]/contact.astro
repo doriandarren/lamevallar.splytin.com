@@ -1,0 +1,17 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { getStaticPaths, getI18nProps } from '../../i18n/helperi18n';
+import ContactComponent from '../../components/contact/ContactComponent.astro';
+
+export { getStaticPaths };
+
+const { lang, t, title } = getI18nProps(Astro.params, 'contact');
+
+---
+
+
+<MainLayout title={title} lang={lang}>
+
+  <ContactComponent title={title}/>
+
+</MainLayout>

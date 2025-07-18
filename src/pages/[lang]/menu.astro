@@ -1,0 +1,22 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getStaticPaths, getI18nProps } from "../../i18n/helperi18n";
+import { MenuComponent } from "../../components/menu/MenuComponent";
+
+
+export { getStaticPaths };
+
+const { lang, t, title } = getI18nProps(Astro.params, "menu");
+console.log({ lang, t, title }); 
+---
+
+<MainLayout title={title} lang={lang}>
+    <div class="section my-10 max-w-4xl mx-auto px-4">
+         <div class="relative p-10 overflow-hidden shadow-lg t-10">
+            <MenuComponent client:load />
+
+        </div>
+    </div>
+   
+
+</MainLayout>

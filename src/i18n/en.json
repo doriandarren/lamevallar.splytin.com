@@ -1,0 +1,81 @@
+{
+   "navbar": {
+    "lang_es": "Español",
+    "lang_en": "English",
+    "brand": "MySite",
+    "home": "Home",
+    "about": "About",
+    "menu": "Menu",
+    "contact": "Contact",
+    "map": "Map",
+    "login": "Login"
+  },
+  "home": {
+    "title": "Home",
+    "heading": "Welcome",
+    "description": "This is the English version."
+  },
+  "about": {
+    "title": "About Us",
+    "heading": "Learn About Our Company",
+    "description": "We are a company dedicated to...",
+    "title1": "Flavors that define us",
+    "txt1": "At La Meva Llar, we celebrate the essence of Mediterranean cuisine with timeless recipes made from fresh, local ingredients.",
+    "title2": "A place to gather",
+    "txt2": "Our space is designed for people to come together and enjoy good food, heartfelt moments, and the warmth of home."
+  },
+  "contact": {
+    "title": "Contact",
+    "heading": "Get in Touch",
+    "description": "You can reach us through the form..."
+  },
+  "footer": {
+    "solutions": "Solutions",
+    "solutions_list": {
+      "marketing": "Marketing",
+      "analytics": "Analytics",
+      "automation": "Automation",
+      "commerce": "Commerce",
+      "insights": "Insights"
+    },
+    "support": "Support",
+    "support_list": {
+      "submit_ticket": "Submit ticket",
+      "documentation": "Documentation",
+      "guides": "Guides"
+    },
+    "company": "Company",
+    "company_list": {
+      "about": "About",
+      "blog": "Blog",
+      "jobs": "Jobs",
+      "press": "Press"
+    },
+    "legal": "Legal",
+    "legal_list": {
+      "terms_of_service": "Terms of service",
+      "privacy_policy": "Privacy policy",
+      "license": "License"
+    },
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "description": "The latest news, articles, and resources, sent to your inbox weekly.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "copyright": "All rights reserved."
+  },
+  "menu": {
+    "title": "Home",
+    "heading": "Welcome",
+    "description": "This is the English version."
+  },
+   "location": {
+    "title": "Location & Hours",
+    "address": "📍 Buenos Aires Street, 12 – Barcelona",
+    "hours": "🕒 Monday to Sunday: 9:00 AM - 11:00 PM",
+    "phone": "📞 +34 600 123 456",
+    "note": "* Special schedules on holidays"
+  }
+  
+}

@@ -1,0 +1,71 @@
+---
+import Navbar from "../components/navbar/Navbar.astro";
+import "../styles/global.css";
+import ClientRouter from 'astro/components/ClientRouter.astro';
+import type { SupportedLang } from '../i18n/utils';
+import Footer from "../components/footer/Footer.astro";
+
+import 'aos/dist/aos.css';  // Importa los estilos de AOS en el layout global
+import AOS from 'aos';
+
+interface Props {
+    title: string;
+    lang: SupportedLang;
+}
+
+const {title, lang} = Astro.props;
+
+
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TODO esto va dinamico -->
+    <!-- Descripción que se muestra en Google -->
+    <meta name="description" content="Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.">
+    <!-- Palabras clave (Google ya no la usa, pero algunos motores sí) -->
+    <meta name="keywords" content="palabra clave 1, palabra clave 2, nombre de marca, servicio principal">
+    <!-- Autor -->
+    <meta name="author" content="Tu nombre o nombre de la empresa">
+    <!-- Indexación y seguimiento (importante) -->
+    <meta name="robots" content="index, follow">
+    <!-- Icono de pestaña -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- Open Graph para compartir en redes sociales -->
+    <meta property="og:title" content="Nombre de tu sitio o título atractivo">
+    <meta property="og:description" content="Resumen que aparece al compartir en redes.">
+    <meta property="og:image" content="https://tusitio.com/img/preview.jpg">
+    <meta property="og:url" content="https://tusitio.com">
+    <meta property="og:type" content="website">
+
+    <!-- END esto va dinamico -->
+
+
+    <script src="https://unpkg.com/alpinejs" is:inline defer></script>
+
+
+
+    <title>{title}</title>
+
+    <ClientRouter />
+    
+  </head>
+  <body class="bg-background">
+    
+    <!-- Navbar -->
+    <Navbar lang={lang} />
+
+    <slot />
+
+    <Footer />
+
+    <script>
+      import AOS from 'aos';
+      AOS.init();
+    </script>
+    
+  </body>
+</html>

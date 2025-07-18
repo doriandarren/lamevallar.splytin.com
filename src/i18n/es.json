@@ -1,0 +1,80 @@
+{
+  "navbar": {
+    "lang_es": "Español",
+    "lang_en": "English",
+    "brand": "MiSitio",
+    "home": "Inicio",
+    "about": "Nosotros",
+    "menu": "Menú",
+    "contact": "Contacto",
+    "map": "Mapa",
+    "login": "Login"
+  },
+  "home": {
+    "title": "Inicio",
+    "heading": "Bienvenido",
+    "description": "Esta es la versión en español."
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "heading": "Acerca de nuestra empresa",
+    "description": "Somos una empresa dedicada a...",
+    "title1": "Sabores que nos definen",
+    "txt1": "En La Meva Llar celebramos la esencia de la cocina mediterránea con recetas de toda la vida, elaboradas con productos frescos y locales.",
+    "title2": "Un lugar para compartir",
+    "txt2": "Nuestro espacio está pensado para reunir personas, celebrar momentos y saborear juntos cada plato."
+  },
+  "contact": {
+    "title": "Contacto",
+    "heading": "Ponte en contacto",
+    "description": "Puedes escribirnos a través del formulario..."
+  },
+  "footer": {
+    "solutions": "Soluciones",
+    "solutions_list": {
+      "marketing": "Marketing",
+      "analytics": "Analítica",
+      "automation": "Automatización",
+      "commerce": "Comercio",
+      "insights": "Información"
+    },
+    "support": "Soporte",
+    "support_list": {
+      "submit_ticket": "Enviar ticket",
+      "documentation": "Documentación",
+      "guides": "Guías"
+    },
+    "company": "Compañía",
+    "company_list": {
+      "about": "Sobre nosotros",
+      "blog": "Blog",
+      "jobs": "Trabajos",
+      "press": "Prensa"
+    },
+    "legal": "Legal",
+    "legal_list": {
+      "terms_of_service": "Términos de servicio",
+      "privacy_policy": "Política de privacidad",
+      "license": "Licencia"
+    },
+    "newsletter": {
+      "title": "Suscríbete a nuestro boletín",
+      "description": "Las últimas noticias, artículos y recursos directamente a tu correo semanalmente.",
+      "placeholder": "Introduce tu correo electrónico",
+      "button": "Suscribirse"
+    },
+    "copyright": "Todos los derechos reservados."
+  },
+  "menu": {
+    "title": "Menú",
+    "heading": "Bienvenido",
+    "description": "Esta es la versión en español."
+  },
+   "location": {
+    "title": "Ubicación y Horarios",
+    "address": "📍 Calle Buenos Aires, 12 – Barcelona",
+    "hours": "🕒 Lunes a Domingo: 9:00 - 23:00",
+    "phone": "📞 +34 600 123 456",
+    "note": "* Horarios especiales en festivos"
+  }
+}

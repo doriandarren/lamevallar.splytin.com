@@ -1,0 +1,16 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { getStaticPaths, getI18nProps } from '../../i18n/helperi18n';
+import AboutComponent from '../../components/about/AboutComponent.astro';
+
+export { getStaticPaths };
+
+const { lang, t, title } = getI18nProps(Astro.params, 'about');
+
+---
+
+<MainLayout title={title} lang={lang}>
+
+  <AboutComponent title={title} />
+
+</MainLayout>
