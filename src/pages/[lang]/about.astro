@@ -11,6 +11,10 @@ const { lang, t, title } = getI18nProps(Astro.params, 'about');
 
 <MainLayout title={title} lang={lang}>
 
-  <AboutComponent title={title} />
+  <div class="section">
+    <AboutComponent title={title} />
+  </div>
+
+  
 
 </MainLayout>
