@@ -21,8 +21,8 @@ export const MenuComponent = () => {
       loop={true}
       className="h-full"
     >
-      <SwiperSlide><img src="/images/carta1.jpg" alt="carta1" className="w-full h-full object-cover" /></SwiperSlide>
-      <SwiperSlide><img src="/images/carta2.jpg" alt="carta2" className="w-full h-full object-cover" /></SwiperSlide>
+      <SwiperSlide><img src="/images/carta1.webp" alt="carta1" className="w-full h-full object-cover" /></SwiperSlide>
+      <SwiperSlide><img src="/images/carta2.webp" alt="carta2" className="w-full h-full object-cover" /></SwiperSlide>
     </Swiper>
 
   )
