@@ -44,22 +44,23 @@ const {title, lang} = Astro.props;
 
     <!-- END esto va dinamico -->
 
-
+    
     <!-- <script src="https://unpkg.com/alpinejs" is:inline defer></script> -->
-
-
 
     <title>{title}</title>
 
     <ClientRouter />
     
   </head>
-  <body class="bg-background">
+  <body class="overflow-x-hidden bg-background">
     
     <!-- Navbar -->
     <Navbar lang={lang} />
 
-    <slot />
+    <main class="w-full overflow-x-hidden">
+      <slot />
+    </main>
+    
 
     <Footer />
 
