@@ -12,6 +12,10 @@ const { lang, t, title } = getI18nProps(Astro.params, 'contact');
 
 <MainLayout title={title} lang={lang}>
 
-  <ContactComponent title={title}/>
+  <div class="section">
+
+    <ContactComponent title={title}/>
+
+  </div>
 
 </MainLayout>

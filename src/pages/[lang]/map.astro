@@ -10,6 +10,8 @@ const { lang, t, title } = getI18nProps(Astro.params, "map");
 
 <MainLayout title={title} lang={lang}>
   
-  <MapComponent />
+  <div class="section">
+    <MapComponent />
+  </div>
 
 </MainLayout>
