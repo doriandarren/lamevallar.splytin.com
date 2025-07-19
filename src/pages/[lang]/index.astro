@@ -4,7 +4,8 @@ import { getStaticPaths, getI18nProps } from '@i18n/helperi18n';
 import MainLayout from '@layouts/MainLayout.astro';
 import ContactComponent from '@components/contact/ContactComponent.astro';
 import IndexComponent from '@components/index/IndexComponent.astro';
-import MapComponent from '@components/maps/MapComponent';
+import MapComponent from '@components/maps/MapComponent.astro';
+import MenuComponent from '@components/menu/MenuComponent.astro';
 
 export { getStaticPaths };
 
@@ -37,16 +38,17 @@ const ogType = "website";
 
   <IndexComponent title={title} />
 
-  <div class="section">
-    <AboutComponent title={title} />
-  </div>
+  
+  <AboutComponent title={title} />
+  
+
+  <MenuComponent title={title} />
 
  
   <ContactComponent title={title}/>
+  
+  
+  <MapComponent title={title} />
 
-
-  <div class="section ml-10 mr-10">
-    <MapComponent client:only="react" />
-  </div>
 
 </MainLayout>

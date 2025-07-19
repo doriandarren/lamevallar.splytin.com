@@ -126,6 +126,10 @@
         padding-top: 10rem;
     }
 
+    section {
+        padding-top: 1.5rem;
+    }
+
 
     /* Only by Navbar */
     [x-cloak] {

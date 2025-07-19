@@ -5,9 +5,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 
-export const MenuComponent = () => {
+export const MenuComponentReact = () => {
   return (
-    
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       slidesPerView={1}
@@ -24,6 +23,5 @@ export const MenuComponent = () => {
       <SwiperSlide><img src="/images/carta1.webp" alt="carta1" className="w-full h-full object-cover" /></SwiperSlide>
       <SwiperSlide><img src="/images/carta2.webp" alt="carta2" className="w-full h-full object-cover" /></SwiperSlide>
     </Swiper>
-
   )
 }
