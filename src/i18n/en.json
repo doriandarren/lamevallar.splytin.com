@@ -65,11 +65,12 @@
     },
     "copyright": "All rights reserved."
   },
-  "menu": {
-    "title": "Home",
-    "heading": "Welcome",
-    "description": "This is the English version."
-  },
+    "menu": {
+    "title": "Our Menu",
+    "heading": "Discover unique flavors",
+    "description": "A curated selection of dishes designed to delight your senses with the best of Mediterranean cuisine"
+  }
+  ,
    "location": {
     "title": "Location & Hours",
     "address": "📍 Buenos Aires Street, 12 – Barcelona",
