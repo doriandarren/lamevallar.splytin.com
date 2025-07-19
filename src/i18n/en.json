@@ -76,6 +76,11 @@
     "hours": "🕒 Monday to Sunday: 9:00 AM - 11:00 PM",
     "phone": "📞 +34 600 123 456",
     "note": "* Special schedules on holidays"
+  },
+  "map": {
+    "title": "Location",
+    "heading": "Your dining destination",
+    "description": "A place where every visit feels special."
   }
   
 }

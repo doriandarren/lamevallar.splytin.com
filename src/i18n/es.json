@@ -76,5 +76,10 @@
     "hours": "🕒 Lunes a Domingo: 9:00 - 23:00",
     "phone": "📞 +34 600 123 456",
     "note": "* Horarios especiales en festivos"
+  },
+  "map": {
+    "title": "Ubicación",
+    "heading": "Tu destino gastronómico",
+    "description": "Un lugar donde cada visita es especial."
   }
 }

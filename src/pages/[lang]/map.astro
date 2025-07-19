@@ -1,26 +1,17 @@
 ---
-import MainLayout from '../../layouts/MainLayout.astro';
-import { getStaticPaths, getI18nProps } from '../../i18n/helperi18n';
-import MapComponent from '../../components/maps/MapComponent.jsx';
-
-
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getStaticPaths, getI18nProps } from "../../i18n/helperi18n";
+import MapComponent from "../../components/maps/MapComponent.jsx";
 
 export { getStaticPaths };
 
-const { lang, t, title } = getI18nProps(Astro.params, 'map');
-
-
+const { lang, t, title } = getI18nProps(Astro.params, "map");
 ---
 
-
 <MainLayout title={title} lang={lang}>
-
-    <div class="section mb-10">
-
-        <h2 class="text-3xl font-bold mb-6">Ubicación</h2>
-
-        <MapComponent client:only="react" />
-
-    </div>
-
+  <div class="section mb-10">
+    <h2 class="text-3xl text-center font-bold mb-6">{t("map.heading")}</h2>
+    <p class="mb-4 text-center">{t("map.description")}</p>
+    <MapComponent client:only="react" />
+  </div>
 </MainLayout>
