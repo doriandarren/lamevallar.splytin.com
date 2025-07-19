@@ -7,10 +7,29 @@ export { getStaticPaths };
 
 const { lang, t, title } = getI18nProps(Astro.params, 'contact');
 
+
+const description = 'Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.';
+
+// OG
+const ogTitle = "La meva llar | Quienes somos";
+const ogDescription = "Nuestro de contacto del sitio";
+const ogImage = "https://tusitio.com/img/preview.jpg";
+const ogUR = "https://lamevallar.splytin.com";
+const ogType = "website";
+
 ---
 
 
-<MainLayout title={title} lang={lang}>
+<MainLayout 
+  title={title} 
+  lang={lang}
+  description={description}
+  ogTitle={ogTitle}
+  ogDescription={ogDescription}
+  ogImage={ogImage}
+  ogUR={ogUR}
+  ogType={ogType}
+>
 
   <div class="section">
 
