@@ -19,11 +19,11 @@ const { lang, t, title } = getI18nProps(Astro.params, 'home');
     
     <Navbar lang={lang} />
 
-    <div class="relative isolate overflow-hidden pt-14">
+    <div class="relative isolate overflow-hidden pt-14 z-0">
       <img
         src="/images/hero.webp"
         alt="img"
-        class="absolute inset-0 -z-10 size-full object-cover"
+        class="absolute inset-0 z-[-10] size-full object-cover"
       />
       <div
         class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
