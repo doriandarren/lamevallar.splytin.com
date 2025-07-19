@@ -11,10 +11,29 @@ import AOS from 'aos';
 interface Props {
     title: string;
     lang: SupportedLang;
+    description?: string;
+    keyword?: string;
+    ogTitle?: string;
+    ogDescription?: string;
+    ogImage?: string;
+    ogUR?: string;
+    ogType?: string;
 }
 
-const {title, lang} = Astro.props;
+const {
+  title, 
+  lang, 
+  description = "Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.",
+  keyword = "palabra clave 1, palabra clave 2, nombre de marca, servicio principal",
+  ogTitle = "Nombre de tu sitio o título atractivo",
+  ogDescription = "Resumen que aparece al compartir en redes.",
+  ogImage = "https://tusitio.com/img/preview.jpg",
+  ogUR = "https://tusitio.com",
+  ogType = "website",
+} = Astro.props;
 
+
+const author = 'lamevallar';
 
 
 ---
@@ -26,21 +45,21 @@ const {title, lang} = Astro.props;
 
     <!-- TODO esto va dinamico -->
     <!-- Descripción que se muestra en Google -->
-    <meta name="description" content="Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.">
+    <meta name="description" content={description}>
     <!-- Palabras clave (Google ya no la usa, pero algunos motores sí) -->
-    <meta name="keywords" content="palabra clave 1, palabra clave 2, nombre de marca, servicio principal">
+    <meta name="keywords" content={keyword}>
     <!-- Autor -->
-    <meta name="author" content="Tu nombre o nombre de la empresa">
+    <meta name="author" content={author}>
     <!-- Indexación y seguimiento (importante) -->
     <meta name="robots" content="index, follow">
     <!-- Icono de pestaña -->
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <!-- Open Graph para compartir en redes sociales -->
-    <meta property="og:title" content="Nombre de tu sitio o título atractivo">
-    <meta property="og:description" content="Resumen que aparece al compartir en redes.">
-    <meta property="og:image" content="https://tusitio.com/img/preview.jpg">
-    <meta property="og:url" content="https://tusitio.com">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content={ogTitle}>
+    <meta property="og:description" content={ogDescription}>
+    <meta property="og:image" content={ogImage}>
+    <meta property="og:url" content={ogUR}>
+    <meta property="og:type" content={ogType}>
 
     <!-- END esto va dinamico -->
 

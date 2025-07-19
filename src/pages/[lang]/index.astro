@@ -9,10 +9,29 @@ export { getStaticPaths };
 
 const { lang, t, title } = getI18nProps(Astro.params, 'home');
 
+const description = 'Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.';
+
+// OG
+const ogTitle = "Nombre de tu sitio o título atractivo";
+const ogDescription = "Resumen que aparece al compartir en redes.";
+const ogImage = "https://tusitio.com/img/preview.jpg";
+const ogUR = "https://tusitio.com";
+const ogType = "website";
+
+
 ---
 
 
-<MainLayout title={title} lang={lang}>
+<MainLayout 
+  title={title} 
+  lang={lang}
+  description={description}
+  ogTitle={ogTitle}
+  ogDescription={ogDescription}
+  ogImage={ogImage}
+  ogUR={ogUR}
+  ogType={ogType}
+>
 
 
   <IndexComponent title={title} />
