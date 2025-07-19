@@ -130,6 +130,27 @@
         padding-top: 1.5rem;
     }
 
+    h1 {
+        @apply text-5xl font-extrabold sm:text-6xl text-white mb-6 text-center;
+    }
+
+    h2 {
+        @apply text-4xl font-bold sm:text-5xl text-white mb-4 text-center;
+    }
+
+    h3 {
+        @apply text-3xl font-semibold sm:text-4xl text-white mb-3 text-center;
+    }
+
+    p {
+        @apply text-lg sm:text-xl text-white;
+    }
+
+    p.italic-note {
+        @apply text-base italic opacity-80;
+    }
+
+
 
     /* Only by Navbar */
     [x-cloak] {

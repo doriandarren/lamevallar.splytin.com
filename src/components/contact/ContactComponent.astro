@@ -21,11 +21,11 @@ const { lang, t, title } = getI18nProps(Astro.params, 'contact');
 
   <!-- Contenido -->
   <div class="relative z-10 flex flex-col items-center justify-center min-h-[60vh] px-6 text-center text-white">
-    <h2 class="text-4xl font-bold sm:text-5xl">{t('location.title')}</h2>
-    <p class="mt-4 text-lg sm:text-xl">{t('location.address')}</p>
-    <p class="mt-2 text-lg sm:text-xl">{t('location.hours')}</p>
-    <p class="mt-2 text-lg sm:text-xl">{t('location.phone')}</p>
-    <p class="mt-2 text-base italic opacity-80">{t('location.note')}</p>
+    <h2>{t('location.title')}</h2>
+    <p>{t('location.address')}</p>
+    <p>{t('location.hours')}</p>
+    <p>{t('location.phone')}</p>
+    <p class="italic-note">{t('location.note')}</p>
   </div>
 </section>
 
