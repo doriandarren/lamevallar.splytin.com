@@ -135,7 +135,7 @@
     }
 
     h2 {
-        @apply text-4xl font-bold sm:text-5xl text-black mb-4 text-center;
+        @apply text-2xl font-bold sm:text-5xl text-black mb-4 text-center;
     }
 
     h3 {
