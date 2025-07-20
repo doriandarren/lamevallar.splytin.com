@@ -1,36 +1,21 @@
+---
+import "@styles/global.css";
+---
 <html lang="es">
   <head>
-    <title>La Meva Llar</title>
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex">
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        font-family: sans-serif;
-        background: #fdfaf7;
-        margin: 0;
-      }
-      .loader {
-        width: 60px; height: 60px;
-        border: 6px solid #eee;
-        border-top-color: #d4a373;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin-bottom: 20px;
-      }
-      @keyframes spin {
-        to { transform: rotate(360deg); }
-      }
-    </style>
+    <title>La Meva Llar | Redireccionando...</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
   </head>
-  <body>
-    <div class="loader"></div>
-    <p>Redirigiendo a La Meva Llar...</p>
+  <body class="bg-[#fcf4e7] flex flex-col justify-center items-center min-h-screen font-sans text-gray-800 text-center px-4">
 
+    <!-- Preloader Spinner -->
+    <div class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 border-8 border-[#f2e1c1] border-t-[#c98b52] rounded-full animate-spin mb-8"></div>
+
+    <!-- Mensaje -->
+    <p class="text-2xl sm:text-3xl md:text-4xl font-semibold">Redirigiendo a La Meva Llar...</p>
+
+    <!-- Script de Redirección -->
     <script is:inline>
       setTimeout(() => window.location.href = "/es/", 1000);
     </script>
