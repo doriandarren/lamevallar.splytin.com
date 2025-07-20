@@ -1,14 +1,11 @@
 ---
+// Puedes definir variables si quieres, pero el redirect lo hace el script
 const redirectUrl = '/es/';
-setTimeout(() => {
-  window.location.href = redirectUrl;
-}, 1500);
 ---
-
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Redireccionando...</title>
+    <title>Redireccionando a La Meva Llar...</title>
     <meta name="robots" content="noindex">
     <style>
       body {
@@ -40,6 +37,11 @@ setTimeout(() => {
   <body>
     <div class="loader"></div>
     <p>Redirigiendo a La Meva Llar...</p>
+
+    <script is:inline>
+      setTimeout(() => {
+        window.location.href = "/es/";
+      }, 1500);
+    </script>
   </body>
 </html>
-
