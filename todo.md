@@ -2,7 +2,6 @@
 
 - Dinamico el meta
 - Cambiar en el index el H1 y quitar las clases y modificar lo que falte
-- Buscar que el map no se monte encima del navbar al bajar por la landing page
 - Hacer imagenes para cada componente para el meta ogImage en Ilustrator fondo transparente
 - Crear el favicon
 - Reparar la imagen del menú
