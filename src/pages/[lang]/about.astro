@@ -7,15 +7,17 @@ export { getStaticPaths };
 
 const { lang, t, title } = getI18nProps(Astro.params, 'about');
 
-const description = 'Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.';
-const keyword = 'Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.';
+// SEO - About
+const description = 'Conoce La Meva Llar, restaurante con esencia mediterránea donde compartimos sabores auténticos, recetas caseras y un ambiente acogedor para disfrutar en compañía.';
+const keyword = 'la meva llar, sobre nosotros, quienes somos, restaurante mediterráneo, historia restaurante, cocina casera, tapas tradicionales, platos mediterráneos, ambiente familiar, esencia mediterránea, restaurante acogedor, gastronomía mediterránea, comida local, tradición y sabor';
 
-// OG
-const ogTitle = "La meva llar | Quienes somos";
-const ogDescription = "Somos un bar restaurant gastrónomico de cocina mediterránea";
-const ogImage = "https://lamevallar.splytin.com/images/preview.jpg";
-const ogURL = "https://lamevallar.splytin.com";
+// OG - About
+const ogTitle = "La Meva Llar | Sobre Nosotros";
+const ogDescription = description;
+const ogImage = "https://lamevallar.splytin.com/images/og-home.jpg"; 
+const ogURL = "https://lamevallar.splytin.com/about";
 const ogType = "website";
+
 
 ---
 
