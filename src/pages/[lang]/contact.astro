@@ -9,15 +9,17 @@ const { lang, t, title } = getI18nProps(Astro.params, 'contact');
 
 
 // SEO - Contacto
-const description = 'Contacta con La Meva Llar, bar restaurante mediterráneo. Reserva tu mesa, consulta disponibilidad o solicita información sobre nuestros menús y eventos especiales.';
-const keyword = 'la meva llar contacto, reservar mesa restaurante, teléfono restaurante mediterráneo, contactar restaurante, reserva online bar, restaurante con tapas, restaurante mediterráneo reservas, contactar bar restaurante, localización restaurante, horarios restaurante, restaurante familiar contacto';
+const description = t('seo.contact.description');
+const keyword = t('seo.contact.keywords');
+
 
 // OG - Contacto
-const ogTitle = "La Meva Llar | Contacto y Reservas";
-const ogDescription = description;
+const ogTitle = t('seo.contact.title');
+const ogDescription = t('seo.contact.ogDescription');
 const ogImage = "https://lamevallar.splytin.com/images/og-home.jpg"; 
 const ogURL = `https://lamevallar.splytin.com/${lang}/contact`;
-const ogType = "website";
+const ogType = t('seo.contact.ogType');
+
 
 ---
 

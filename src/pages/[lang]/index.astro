@@ -11,16 +11,17 @@ export { getStaticPaths };
 
 const { lang, t, title } = getI18nProps(Astro.params, 'home');
 
+
 // SEO
-const description = 'La Meva Llar, bar restaurante con esencia mediterránea: desayunos, tapas, postres y platos caseros en un ambiente cálido y familiar.';
-const keyword = 'la meva llar, restaurante mediterráneo, tapas, desayunos, postres, comida casera, bar Buenos Aires, bar mediterráneo, barcelona, bar barcelona';
+const description = t('seo.home.description');
+const keyword = t('seo.home.keywords');
 
 // OG
-const ogTitle = "La Meva Llar | Restaurante Mediterráneo";
-const ogDescription = description;
+const ogTitle = t('seo.home.title');
+const ogDescription = t('seo.home.ogDescription');
 const ogImage = "https://lamevallar.splytin.com/images/og-home.jpg";
 const ogURL = "https://lamevallar.splytin.com";
-const ogType = "website";
+const ogType = t('seo.home.ogType');
 
 ---
 

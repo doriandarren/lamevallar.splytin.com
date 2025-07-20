@@ -9,15 +9,15 @@ export { getStaticPaths };
 const { lang, t, title } = getI18nProps(Astro.params, "menu");
 
 // SEO - Menú
-const description = 'Descubre el menú de La Meva Llar: platos caseros, tapas mediterráneas, desayunos y postres en un restaurante acogedor con cocina tradicional y de calidad.';
-const keyword = 'la meva llar menú, carta restaurante mediterráneo, tapas restaurante, menú desayunos, menú postres caseros, platos mediterráneos, menú bar restaurante, especialidades mediterráneas, menú cocina casera, carta La Meva Llar, menú actualizado, menú Costa Brava, platos típicos mediterráneos';
+const description = t('seo.menu.description');
+const keyword = t('seo.menu.keywords');
 
 // OG - Menú
-const ogTitle = "La Meva Llar | Nuestra Carta y Menú";
-const ogDescription = description;
-const ogImage = "https://lamevallar.splytin.com/images/og-home.jpg"; 
+const ogTitle = t('seo.menu.title');
+const ogDescription = t('seo.menu.ogDescription');
+const ogImage = "https://lamevallar.splytin.com/images/og-home.jpg";
 const ogURL = `https://lamevallar.splytin.com/${lang}/menu`;
-const ogType = "website";
+const ogType = t('seo.menu.ogType');
 
 
 ---

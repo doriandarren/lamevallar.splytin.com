@@ -82,6 +82,48 @@
     "title": "Location",
     "heading": "Your dining destination",
     "description": "A place where every visit feels special."
+  },
+  "seo": {
+    "home": {
+      "title": "La Meva Llar | Mediterranean Restaurant",
+      "description": "La Meva Llar, a Mediterranean bar and restaurant offering breakfasts, tapas, homemade desserts, and flavorful dishes in a cozy and friendly atmosphere.",
+      "keywords": "la meva llar, mediterranean restaurant, tapas, breakfasts, desserts, homemade food, bar Buenos Aires, mediterranean bar, barcelona, bar barcelona",
+      "ogTitle": "La Meva Llar | Mediterranean Restaurant",
+      "ogDescription": "La Meva Llar, a Mediterranean bar and restaurant offering breakfasts, tapas, homemade desserts, and flavorful dishes in a cozy and friendly atmosphere.",
+      "ogType": "website"
+    },
+    "about": {
+      "title": "La Meva Llar | About Us",
+      "description": "Discover La Meva Llar, a Mediterranean restaurant where we share authentic flavors, homemade recipes, and a cozy atmosphere to enjoy together.",
+      "keywords": "la meva llar, about us, who we are, mediterranean restaurant, restaurant history, homemade food, traditional tapas, mediterranean dishes, family atmosphere, mediterranean essence, cozy restaurant, mediterranean gastronomy, local food, tradition and flavor",
+      "ogTitle": "La Meva Llar | About Us",
+      "ogDescription": "Discover La Meva Llar, a Mediterranean restaurant where we share authentic flavors, homemade recipes, and a cozy atmosphere to enjoy together.",
+      "ogType": "website"
+    },
+    "contact": {
+      "title": "La Meva Llar | Contact & Reservations",
+      "description": "Get in touch with La Meva Llar, a Mediterranean bar and restaurant. Book your table, check availability, or inquire about our menus and special events.",
+      "keywords": "la meva llar contact, book a table restaurant, mediterranean restaurant phone, contact restaurant, online booking bar, tapas restaurant, mediterranean restaurant reservations, contact bar restaurant, restaurant location, opening hours restaurant, family restaurant contact",
+      "ogTitle": "La Meva Llar | Contact & Reservations",
+      "ogDescription": "Get in touch with La Meva Llar, a Mediterranean bar and restaurant. Book your table, check availability, or inquire about our menus and special events.",
+      "ogType": "website"
+    },
+    "map": {
+      "title": "La Meva Llar | Map and Location",
+      "description": "Find La Meva Llar, a Mediterranean bar and restaurant. Check our exact location, how to get here, and plan your visit to enjoy tapas, breakfasts, and homemade dishes.",
+      "keywords": "la meva llar location, how to get to restaurant, mediterranean restaurant map, restaurant near me, family restaurant location, restaurant with terrace address, La Meva Llar map, bar restaurant location, mediterranean restaurant address, Costa Brava restaurant, mediterranean restaurant parking",
+      "ogTitle": "La Meva Llar | Map and Location",
+      "ogDescription": "Find La Meva Llar, a Mediterranean bar and restaurant. Check our exact location, how to get here, and plan your visit to enjoy tapas, breakfasts, and homemade dishes.",
+      "ogType": "website"
+    },
+    "menu": {
+      "title": "La Meva Llar | Our Menu and Dishes",
+      "description": "Discover La Meva Llar's menu: homemade dishes, Mediterranean tapas, breakfasts, and desserts in a cozy restaurant with traditional and quality cuisine.",
+      "keywords": "la meva llar menu, mediterranean restaurant menu, tapas restaurant, breakfast menu, homemade desserts, mediterranean dishes, bar restaurant menu, mediterranean specialties, homemade cuisine menu, La Meva Llar menu, updated menu, Costa Brava menu, typical mediterranean dishes",
+      "ogTitle": "La Meva Llar | Our Menu and Dishes",
+      "ogDescription": "Discover La Meva Llar's menu: homemade dishes, Mediterranean tapas, breakfasts, and desserts in a cozy restaurant with traditional and quality cuisine.",
+      "ogType": "website"
+    }
   }
   
 }

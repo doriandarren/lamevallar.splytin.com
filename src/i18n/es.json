@@ -81,5 +81,49 @@
     "title": "Ubicación",
     "heading": "Tu destino gastronómico",
     "description": "Un lugar donde cada visita es especial."
+  },
+  "seo": {
+    "home": {
+      "title": "La Meva Llar | Restaurante Mediterráneo",
+      "description": "La Meva Llar, bar restaurante con esencia mediterránea: desayunos, tapas, postres y platos caseros en un ambiente cálido y familiar.",
+      "keywords": "la meva llar, restaurante mediterráneo, tapas, desayunos, postres, comida casera, bar Buenos Aires, bar mediterráneo, barcelona, bar barcelona",
+      "ogTitle": "La Meva Llar | Restaurante Mediterráneo",
+      "ogDescription": "La Meva Llar, bar restaurante con esencia mediterránea: desayunos, tapas, postres y platos caseros en un ambiente cálido y familiar.",
+      "ogType": "website"
+    },
+    "about": {
+      "title": "La Meva Llar | Sobre Nosotros",
+      "description": "Conoce La Meva Llar, restaurante con esencia mediterránea donde compartimos sabores auténticos, recetas caseras y un ambiente acogedor para disfrutar en compañía.",
+      "keywords": "la meva llar, sobre nosotros, quienes somos, restaurante mediterráneo, historia restaurante, cocina casera, tapas tradicionales, platos mediterráneos, ambiente familiar, esencia mediterránea, restaurante acogedor, gastronomía mediterránea, comida local, tradición y sabor",
+      "ogTitle": "La Meva Llar | Sobre Nosotros",
+      "ogDescription": "Conoce La Meva Llar, restaurante con esencia mediterránea donde compartimos sabores auténticos, recetas caseras y un ambiente acogedor para disfrutar en compañía.",
+      "ogType": "website"
+    },
+    "contact": {
+      "title": "La Meva Llar | Contacto y Reservas",
+      "description": "Contacta con La Meva Llar, bar restaurante mediterráneo. Reserva tu mesa, consulta disponibilidad o solicita información sobre nuestros menús y eventos especiales.",
+      "keywords": "la meva llar contacto, reservar mesa restaurante, teléfono restaurante mediterráneo, contactar restaurante, reserva online bar, restaurante con tapas, restaurante mediterráneo reservas, contactar bar restaurante, localización restaurante, horarios restaurante, restaurante familiar contacto",
+      "ogTitle": "La Meva Llar | Contacto y Reservas",
+      "ogDescription": "Contacta con La Meva Llar, bar restaurante mediterráneo. Reserva tu mesa, consulta disponibilidad o solicita información sobre nuestros menús y eventos especiales.",
+      "ogType": "website"
+    },
+    "map": {
+      "title": "La Meva Llar | Mapa y Localización",
+      "description": "Encuentra La Meva Llar, bar restaurante mediterráneo. Consulta nuestra ubicación exacta, cómo llegar y planifica tu visita para disfrutar de tapas, desayunos y platos caseros.",
+      "keywords": "la meva llar ubicación, cómo llegar restaurante, mapa restaurante mediterráneo, restaurante cerca de mí, restaurante familiar ubicación, restaurante con terraza dirección, La Meva Llar mapa, localización bar restaurante, dirección restaurante mediterráneo, restaurante Costa Brava, parking restaurante mediterráneo",
+      "ogTitle": "La Meva Llar | Mapa y Localización",
+      "ogDescription": "Encuentra La Meva Llar, bar restaurante mediterráneo. Consulta nuestra ubicación exacta, cómo llegar y planifica tu visita para disfrutar de tapas, desayunos y platos caseros.",
+      "ogType": "website"
+    },
+    "menu": {
+      "title": "La Meva Llar | Nuestra Carta y Menú",
+      "description": "Descubre el menú de La Meva Llar: platos caseros, tapas mediterráneas, desayunos y postres en un restaurante acogedor con cocina tradicional y de calidad.",
+      "keywords": "la meva llar menú, carta restaurante mediterráneo, tapas restaurante, menú desayunos, menú postres caseros, platos mediterráneos, menú bar restaurante, especialidades mediterráneas, menú cocina casera, carta La Meva Llar, menú actualizado, menú Costa Brava, platos típicos mediterráneos",
+      "ogTitle": "La Meva Llar | Nuestra Carta y Menú",
+      "ogDescription": "Descubre el menú de La Meva Llar: platos caseros, tapas mediterráneas, desayunos y postres en un restaurante acogedor con cocina tradicional y de calidad.",
+      "ogType": "website"
+    }
   }
+
+
 }
