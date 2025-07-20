@@ -7,14 +7,17 @@ export { getStaticPaths };
 
 const { lang, t, title } = getI18nProps(Astro.params, "map");
 
-const description = 'Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.';
+// SEO - Mapa y Localización
+const description = 'Encuentra La Meva Llar, bar restaurante mediterráneo. Consulta nuestra ubicación exacta, cómo llegar y planifica tu visita para disfrutar de tapas, desayunos y platos caseros.';
+const keyword = 'la meva llar ubicación, cómo llegar restaurante, mapa restaurante mediterráneo, restaurante cerca de mí, restaurante familiar ubicación, restaurante con terraza dirección, La Meva Llar mapa, localización bar restaurante, dirección restaurante mediterráneo, restaurante Costa Brava, parking restaurante mediterráneo';
 
-// OG
-const ogTitle = "La meva llar | Ubicación";
-const ogDescription = "Ubicación de nuestro bar la meva llar.";
-const ogImage = "https://lamevallar.splytin.com/images/preview.jpg";
-const ogUR = "https://lamevallar.splytin.com";
+// OG - Map
+const ogTitle = "La Meva Llar | Mapa y Localización";
+const ogDescription = description;
+const ogImage = "https://lamevallar.splytin.com/images/og-home.jpg"; 
+const ogURL = "https://lamevallar.splytin.com/map";
 const ogType = "website";
+
 
 ---
 
@@ -22,10 +25,11 @@ const ogType = "website";
   title={title} 
   lang={lang}
   description={description}
+  keyword={keyword}
   ogTitle={ogTitle}
   ogDescription={ogDescription}
   ogImage={ogImage}
-  ogUR={ogUR}
+  ogURL={ogURL}
   ogType={ogType}
 >
   
