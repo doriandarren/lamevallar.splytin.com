@@ -1,5 +1,45 @@
 ---
-
+const redirectUrl = '/es/';
+setTimeout(() => {
+  window.location.href = redirectUrl;
+}, 1500);
 ---
 
-<!-- Este index debe de estar -->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Redireccionando...</title>
+    <meta name="robots" content="noindex">
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #fdfaf7;
+        font-family: sans-serif;
+        color: #444;
+      }
+      .loader {
+        border: 6px solid #f3f3f3;
+        border-top: 6px solid #d4a373;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1s linear infinite;
+        margin-bottom: 20px;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <p>Redirigiendo a La Meva Llar...</p>
+  </body>
+</html>
+
