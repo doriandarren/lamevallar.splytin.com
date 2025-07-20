@@ -1,47 +1,37 @@
 ---
-// Puedes definir variables si quieres, pero el redirect lo hace el script
-const redirectUrl = '/es/';
 ---
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <title>Redireccionando a La Meva Llar...</title>
+    <title>La Meva Llar | Redireccionando...</title>
     <meta name="robots" content="noindex">
     <style>
       body {
-        margin: 0;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background: #fdfaf7;
+        flex-direction: column;
         font-family: sans-serif;
-        color: #444;
+        background: #fdfaf7;
       }
       .loader {
-        border: 6px solid #f3f3f3;
-        border-top: 6px solid #d4a373;
+        width: 60px; height: 60px;
+        border: 6px solid #eee;
+        border-top-color: #d4a373;
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
         animation: spin 1s linear infinite;
-        margin-bottom: 20px;
       }
       @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+        to { transform: rotate(360deg); }
       }
     </style>
   </head>
   <body>
     <div class="loader"></div>
-    <p>Redirigiendo a La Meva Llar...</p>
+    <p>Redireccionando a la versión en español...</p>
 
     <script is:inline>
-      setTimeout(() => {
-        window.location.href = "/es/";
-      }, 1500);
+      setTimeout(() => window.location.href = "/es/", 1500);
     </script>
   </body>
 </html>
