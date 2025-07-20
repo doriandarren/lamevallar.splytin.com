@@ -1,24 +1,21 @@
----
----
 <html lang="es">
   <head>
-    <title>La Meva Llar | Redireccionando</title>
+    <title>La Meva Llar</title>
+    <meta charset="utf-8">
     <meta name="robots" content="noindex">
-    <meta charset="utf-8" />
     <style>
       body {
-        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         font-family: sans-serif;
         background: #fdfaf7;
+        margin: 0;
       }
       .loader {
-        width: 60px;
-        height: 60px;
+        width: 60px; height: 60px;
         border: 6px solid #eee;
         border-top-color: #d4a373;
         border-radius: 50%;
@@ -32,11 +29,10 @@
   </head>
   <body>
     <div class="loader"></div>
-    <p>Redireccionando a la versión en español...</p>
+    <p>Redirigiendo a La Meva Llar...</p>
+
     <script is:inline>
-      setTimeout(() => {
-        window.location.href = "/es/";
-      }, 1500);
+      setTimeout(() => window.location.href = "/es/", 1000);
     </script>
   </body>
 </html>
