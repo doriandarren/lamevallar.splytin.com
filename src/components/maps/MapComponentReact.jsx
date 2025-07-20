@@ -18,6 +18,6 @@ export default function Map() {
   }, []);
 
   return (
-    <div id="mapid" className="h-[450px] w-full rounded-lg shadow-lg"></div>
+    <div id="mapid" className="h-[450px] w-full rounded-lg shadow-lg z-10"></div>
   );
 }
