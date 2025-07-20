@@ -11,16 +11,16 @@ export { getStaticPaths };
 
 const { lang, t, title } = getI18nProps(Astro.params, 'home');
 
-const description = 'La Meva Llar es tu rincón mediterráneo para disfrutar de desayunos, tapas, postres caseros y comidas llenas de sabor. Un espacio acogedor para compartir momentos únicos.';
-const keyword = 'lamevallar inicio principal bar restaurant restaurante mediterraneo';
+// SEO
+const description = 'La Meva Llar, bar restaurante con esencia mediterránea: desayunos, tapas, postres y platos caseros en un ambiente cálido y familiar.';
+const keyword = 'la meva llar, restaurante mediterráneo, tapas, desayunos, postres, comida casera, bar Sant Feliu, bar mediterráneo';
 
 // OG
-const ogTitle = "La meva llar | Home";
-const ogDescription = "Pagina principal de la meva llar.";
-const ogImage = "https://lamevallar.splytin.com/images/logo.webp";
+const ogTitle = "La Meva Llar | Restaurante Mediterráneo";
+const ogDescription = description;
+const ogImage = "https://lamevallar.splytin.com/images/og-home.jpg"; // mejor imagen destacada
 const ogURL = "https://lamevallar.splytin.com";
 const ogType = "website";
-
 
 ---
 
