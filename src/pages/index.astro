@@ -1,15 +1,42 @@
 ---
-// Sin ningún redirect aquí
 ---
 <html lang="es">
   <head>
-    <title>La Meva Llar | Redireccionando...</title>
+    <title>La Meva Llar | Redireccionando</title>
     <meta name="robots" content="noindex">
-    <script is:inline>
-      setTimeout(() => window.location.href = "/es/", 1000);
-    </script>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: sans-serif;
+        background: #fdfaf7;
+      }
+      .loader {
+        width: 60px;
+        height: 60px;
+        border: 6px solid #eee;
+        border-top-color: #d4a373;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-bottom: 20px;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
   </head>
   <body>
-    <div>Redireccionando con estilo...</div>
+    <div class="loader"></div>
+    <p>Redireccionando a la versión en español...</p>
+    <script is:inline>
+      setTimeout(() => {
+        window.location.href = "/es/";
+      }, 1500);
+    </script>
   </body>
 </html>
