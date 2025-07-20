@@ -4,6 +4,14 @@
 npm create astro@latest -- --template minimal
 ```
 
+## update Astro
+
+```sh
+
+npx @astrojs/upgrade
+
+```
+
 
 ## 🚀 Project Structure
 
