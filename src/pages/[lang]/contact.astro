@@ -8,13 +8,15 @@ export { getStaticPaths };
 const { lang, t, title } = getI18nProps(Astro.params, 'contact');
 
 
-const description = 'Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.';
+// SEO - Contacto
+const description = 'Contacta con La Meva Llar, bar restaurante mediterráneo. Reserva tu mesa, consulta disponibilidad o solicita información sobre nuestros menús y eventos especiales.';
+const keyword = 'la meva llar contacto, reservar mesa restaurante, teléfono restaurante mediterráneo, contactar restaurante, reserva online bar, restaurante con tapas, restaurante mediterráneo reservas, contactar bar restaurante, localización restaurante, horarios restaurante, restaurante familiar contacto';
 
-// OG
-const ogTitle = "La meva llar | Contacto";
-const ogDescription = "Nuestro de contacto del sitio";
-const ogImage = "https://lamevallar.splytin.com/images/preview.jpg";
-const ogUR = "https://lamevallar.splytin.com";
+// OG - Contacto
+const ogTitle = "La Meva Llar | Contacto y Reservas";
+const ogDescription = description;
+const ogImage = "https://lamevallar.splytin.com/images/og-contact.jpg"; // ideal una imagen relacionada con atención o reservas
+const ogURL = "https://lamevallar.splytin.com/contact";
 const ogType = "website";
 
 ---
@@ -24,10 +26,11 @@ const ogType = "website";
   title={title} 
   lang={lang}
   description={description}
+  keyword={keyword}
   ogTitle={ogTitle}
   ogDescription={ogDescription}
   ogImage={ogImage}
-  ogUR={ogUR}
+  ogURL={ogURL}
   ogType={ogType}
 >
 
