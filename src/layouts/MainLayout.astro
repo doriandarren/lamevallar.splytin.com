@@ -16,19 +16,19 @@ interface Props {
     ogTitle?: string;
     ogDescription?: string;
     ogImage?: string;
-    ogUR?: string;
+    ogURL?: string;
     ogType?: string;
 }
 
 const {
   title, 
   lang, 
-  description = "Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.",
+  description = "La Meva Llar es tu rincón mediterráneo para disfrutar de desayunos, tapas, postres caseros y comidas llenas de sabor. Un espacio acogedor para compartir momentos únicos.",
   keyword = "palabra clave 1, palabra clave 2, nombre de marca, servicio principal",
   ogTitle = "Nombre de tu sitio o título atractivo",
   ogDescription = "Resumen que aparece al compartir en redes.",
-  ogImage = "https://tusitio.com/img/preview.jpg",
-  ogUR = "https://tusitio.com",
+  ogImage = "https://lamevallar.splytin.com/images/logo.webp",
+  ogURL = "https://lamevallar.splytin.com",
   ogType = "website",
 } = Astro.props;
 
@@ -58,7 +58,7 @@ const author = 'lamevallar';
     <meta property="og:title" content={ogTitle}>
     <meta property="og:description" content={ogDescription}>
     <meta property="og:image" content={ogImage}>
-    <meta property="og:url" content={ogUR}>
+    <meta property="og:url" content={ogURL}>
     <meta property="og:type" content={ogType}>
 
     <!-- END esto va dinamico -->

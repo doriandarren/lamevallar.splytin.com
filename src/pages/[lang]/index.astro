@@ -11,13 +11,14 @@ export { getStaticPaths };
 
 const { lang, t, title } = getI18nProps(Astro.params, 'home');
 
-const description = 'Descripción clara de tu negocio o sitio web. Idealmente entre 140 y 160 caracteres.';
+const description = 'La Meva Llar es tu rincón mediterráneo para disfrutar de desayunos, tapas, postres caseros y comidas llenas de sabor. Un espacio acogedor para compartir momentos únicos.';
+const keyword = 'lamevallar inicio principal bar restaurant restaurante mediterraneo';
 
 // OG
 const ogTitle = "La meva llar | Home";
 const ogDescription = "Pagina principal de la meva llar.";
-const ogImage = "https://tusitio.com/img/preview.jpg";
-const ogUR = "https://lamevallar.splytin.com";
+const ogImage = "https://lamevallar.splytin.com/images/logo.webp";
+const ogURL = "https://lamevallar.splytin.com";
 const ogType = "website";
 
 
@@ -28,10 +29,11 @@ const ogType = "website";
   title={title} 
   lang={lang}
   description={description}
+  keyword={keyword}
   ogTitle={ogTitle}
   ogDescription={ogDescription}
   ogImage={ogImage}
-  ogUR={ogUR}
+  ogURL={ogURL}
   ogType={ogType}
 >
 
