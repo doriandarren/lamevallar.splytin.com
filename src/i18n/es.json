@@ -25,9 +25,11 @@
     "txt2": "Nuestro espacio está pensado para reunir personas, celebrar momentos y saborear juntos cada plato."
   },
   "contact": {
-    "title": "Contacto",
-    "heading": "Ponte en contacto",
-    "description": "Puedes escribirnos a través del formulario..."
+    "title": "Ubicación y Horarios",
+    "address": "📍 Calle Buenos Aires, 12 – Barcelona",
+    "hours": "🕒 Lunes a Domingo: 9:00 - 23:00",
+    "phone": "📞 +34 600 123 456",
+    "note": "* Horarios especiales en festivos"
   },
   "footer": {
     "solutions": "Soluciones",
@@ -65,17 +67,10 @@
     },
     "copyright": "Todos los derechos reservados."
   },
-    "menu": {
+  "menu": {
     "title": "Nuestra Carta",
     "heading": "Explora sabores únicos",
     "description": "Una selección de platos pensados para deleitar tus sentidos con lo mejor de la cocina mediterránea"
-  },
-   "location": {
-    "title": "Ubicación y Horarios",
-    "address": "📍 Calle Buenos Aires, 12 – Barcelona",
-    "hours": "🕒 Lunes a Domingo: 9:00 - 23:00",
-    "phone": "📞 +34 600 123 456",
-    "note": "* Horarios especiales en festivos"
   },
   "map": {
     "title": "Ubicación",
@@ -124,6 +119,4 @@
       "ogType": "website"
     }
   }
-
-
 }

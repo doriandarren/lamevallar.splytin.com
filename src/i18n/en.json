@@ -1,5 +1,5 @@
 {
-   "navbar": {
+  "navbar": {
     "lang_es": "Español",
     "lang_en": "English",
     "brand": "MySite",
@@ -25,9 +25,11 @@
     "txt2": "Our space is designed for people to come together and enjoy good food, heartfelt moments, and the warmth of home."
   },
   "contact": {
-    "title": "Contact",
-    "heading": "Get in Touch",
-    "description": "You can reach us through the form..."
+    "title": "Location & Hours",
+    "address": "📍 Buenos Aires Street, 12 – Barcelona",
+    "hours": "🕒 Monday to Sunday: 9:00 AM - 11:00 PM",
+    "phone": "📞 +34 600 123 456",
+    "note": "* Special schedules on holidays"
   },
   "footer": {
     "solutions": "Solutions",
@@ -65,18 +67,10 @@
     },
     "copyright": "All rights reserved."
   },
-    "menu": {
+  "menu": {
     "title": "Our Menu",
     "heading": "Discover unique flavors",
     "description": "A curated selection of dishes designed to delight your senses with the best of Mediterranean cuisine"
-  }
-  ,
-   "location": {
-    "title": "Location & Hours",
-    "address": "📍 Buenos Aires Street, 12 – Barcelona",
-    "hours": "🕒 Monday to Sunday: 9:00 AM - 11:00 PM",
-    "phone": "📞 +34 600 123 456",
-    "note": "* Special schedules on holidays"
   },
   "map": {
     "title": "Location",
@@ -125,5 +119,4 @@
       "ogType": "website"
     }
   }
-  
 }
