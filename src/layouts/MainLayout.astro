@@ -3,8 +3,8 @@ import ClientRouter from 'astro/components/ClientRouter.astro';
 import "@styles/global.css";
 import Navbar from "@components/navbar/Navbar.astro";
 import type { SupportedLang } from '@i18n/utils';
+import CookieBanner from '@components/cookies/CookieBanner';
 import FooterComponent from "@components/footer/FooterComponent.astro";
-//import CookieBanner from '@components/cookies/CookieBanner';
 
 import 'aos/dist/aos.css';  // Importa los estilos de AOS en el layout global
 import AOS from 'aos';
@@ -92,7 +92,8 @@ const author = 'lamevallar';
 
 
     <!-- Layout -->
-    <!-- <CookieBanner client:only="react" /> -->
+    <div id="cookie-container"></div>
+    <CookieBanner client:only="react" />
     
   </body>
 </html>
