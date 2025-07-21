@@ -4,8 +4,6 @@ import "@styles/global.css";
 import Navbar from "@components/navbar/Navbar.astro";
 import type { SupportedLang } from '@i18n/utils';
 import FooterComponent from "@components/footer/FooterComponent.astro";
-//import CookieBanner from "@components/cookies/CookieBanner.jsx";
-
 
 import 'aos/dist/aos.css';  // Importa los estilos de AOS en el layout global
 import AOS from 'aos';
@@ -71,7 +69,6 @@ const author = 'lamevallar';
 
     <title>{title}</title>
 
-
     <ClientRouter />
     
   </head>
@@ -87,18 +84,10 @@ const author = 'lamevallar';
 
     <FooterComponent />
 
-
-
-    <!-- AOS Init -->
     <script>
       import AOS from 'aos';
       AOS.init();
     </script>
-
-
-
-    <!-- <CookieBanner client:only="react" /> -->
-
-
+    
   </body>
 </html>

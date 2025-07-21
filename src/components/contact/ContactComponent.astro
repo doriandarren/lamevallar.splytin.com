@@ -1,6 +1,5 @@
 ---
 import { getStaticPaths, getI18nProps } from '@i18n/helperi18n';
-import MapComponentReact from '@components/maps/MapComponentReact';
 
 export { getStaticPaths };
 
@@ -27,17 +26,6 @@ const { lang, t, title } = getI18nProps(Astro.params, 'contact');
     <p class="text-white">{t('contact.hours')}</p>
     <p class="text-white">{t('contact.phone')}</p>
     <p class="italic-note text-white">{t('contact.note')}</p>
-  </div>
-</section>
-
-<section id="map">
-  <div class="max-w-7xl mx-auto text-center space-y-4">
-    <h2>{t("map.heading")}</h2>
-    <p class="text-center">{t("map.description")}</p>
-  </div>
-
-  <div class="max-w-5xl mx-auto mt-8 px-4">
-    <MapComponentReact client:only="react" />
   </div>
 </section>
 
