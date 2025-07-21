@@ -7,6 +7,7 @@ import FooterComponent from "@components/footer/FooterComponent.astro";
 
 import 'aos/dist/aos.css';  // Importa los estilos de AOS en el layout global
 import AOS from 'aos';
+import CookieButton from '@components/cookies/CookieButton';
 
 interface Props {
     title: string;
@@ -84,9 +85,15 @@ const author = 'lamevallar';
 
     <FooterComponent />
 
+
+    <CookieButton client:only="react" />
+
     <script>
       import AOS from 'aos';
-      AOS.init();
+      AOS.init({
+        once: true,
+        startEvent: 'DOMContentLoaded',
+      });
     </script>
     
   </body>
