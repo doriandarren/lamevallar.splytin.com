@@ -4,7 +4,7 @@ import "@styles/global.css";
 import Navbar from "@components/navbar/Navbar.astro";
 import type { SupportedLang } from '@i18n/utils';
 import FooterComponent from "@components/footer/FooterComponent.astro";
-//import CookieBanner from "@components/cookies/CookieBanner.jsx";
+import CookieBanner from "@components/cookies/CookieBanner.jsx";
 
 
 import 'aos/dist/aos.css';  // Importa los estilos de AOS en el layout global
@@ -97,7 +97,7 @@ const author = 'lamevallar';
 
 
 
-    <!-- <CookieBanner client:only="react" /> -->
+    <CookieBanner client:only="react" />
 
 
   </body>
