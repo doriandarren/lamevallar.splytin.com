@@ -1,7 +1,8 @@
 ---
 import ClientRouter from 'astro/components/ClientRouter.astro';
 import "@styles/global.css";
-import CookieBanner from '@components/cookies/CookiesBanner';
+//import CookieBanner from '@components/cookies/CookiesBanner';
+import CookieButton from '@components/cookies/CookieButton.astro';
 import Navbar from "@components/navbar/Navbar.astro";
 import type { SupportedLang } from '@i18n/utils';
 import FooterComponent from "@components/footer/FooterComponent.astro";
@@ -91,7 +92,7 @@ const author = 'lamevallar';
       AOS.init({ once: true });
     </script>
 
-    <CookieBanner client:only="react" />
+    <CookieButton client:load />
     
   </body>
 </html>
