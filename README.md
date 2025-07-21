@@ -253,3 +253,16 @@ Crear componente menu
 
 
 ```
+
+
+
+## react-cookie-consent
+
+Coockies and consent. Version instala la V9
+
+```sh
+
+npm install react-cookie-consent
+
+
+```
