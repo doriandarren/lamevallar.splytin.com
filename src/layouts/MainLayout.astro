@@ -5,8 +5,8 @@ import Navbar from "@components/navbar/Navbar.astro";
 import type { SupportedLang } from '@i18n/utils';
 import FooterComponent from "@components/footer/FooterComponent.astro";
 
-import 'aos/dist/aos.css';  // Importa los estilos de AOS en el layout global
-import AOS from 'aos';
+// import 'aos/dist/aos.css';  // Importa los estilos de AOS en el layout global
+// import AOS from 'aos';
 import CookieButton from '@components/cookies/CookieButton';
 
 interface Props {
@@ -88,13 +88,13 @@ const author = 'lamevallar';
 
     <CookieButton client:only="react" />
 
-    <script>
+    <!-- <script>
       import AOS from 'aos';
       AOS.init({
         once: true,
         startEvent: 'DOMContentLoaded',
       });
-    </script>
+    </script> -->
     
   </body>
 </html>
