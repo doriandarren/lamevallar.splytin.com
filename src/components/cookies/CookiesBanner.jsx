@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function CookieBanner() {
   const [show, setShow] = useState(false);
-  const [showPreferences, setShowPreferences] = useState(false);
+  const [preferencesOpen, setPreferencesOpen] = useState(false);
   const [preferences, setPreferences] = useState({
     analytics: false,
     marketing: false,
@@ -23,6 +23,7 @@ export default function CookieBanner() {
     saveCookie("analytics", true);
     saveCookie("marketing", true);
     setShow(false);
+    setPreferencesOpen(false);
   };
 
   const rejectAll = () => {
@@ -30,6 +31,7 @@ export default function CookieBanner() {
     saveCookie("analytics", false);
     saveCookie("marketing", false);
     setShow(false);
+    setPreferencesOpen(false);
   };
 
   const acceptPreferences = () => {
@@ -37,38 +39,52 @@ export default function CookieBanner() {
     saveCookie("analytics", preferences.analytics);
     saveCookie("marketing", preferences.marketing);
     setShow(false);
-    setShowPreferences(false);
+    setPreferencesOpen(false);
   };
 
+  if (!show) return null;
+
   return (
-    <div className={`fixed bottom-0 left-0 right-0 p-4 transition-all duration-300 ${show ? "opacity-100 visible" : "opacity-0 invisible"} bg-gray-900 text-white z-50`}>
-      <p className="text-center font-semibold">🍪 Usamos cookies para mejorar tu experiencia</p>
-      
-      {!showPreferences ? (
-        <div className="flex flex-wrap justify-center gap-4 mt-4">
-          <button onClick={acceptAll} className="bg-green-500 px-4 py-2 rounded">Aceptar todo</button>
-          <button onClick={() => setShowPreferences(true)} className="bg-yellow-500 px-4 py-2 rounded">Preferencias</button>
-          <button onClick={rejectAll} className="bg-red-500 px-4 py-2 rounded">Rechazar todo</button>
-        </div>
-      ) : (
-        <div className="flex flex-col items-center gap-3 mt-4">
-          <label>
-            <input
-              type="checkbox"
-              checked={preferences.analytics}
-              onChange={(e) => setPreferences(prev => ({ ...prev, analytics: e.target.checked }))}
-            /> Cookies de Analítica
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              checked={preferences.marketing}
-              onChange={(e) => setPreferences(prev => ({ ...prev, marketing: e.target.checked }))}
-            /> Cookies de Marketing
-          </label>
-          <button onClick={acceptPreferences} className="bg-blue-500 px-4 py-2 rounded">Guardar preferencias</button>
+    <>
+      {/* Botón flotante */}
+      {!preferencesOpen && (
+        <button
+          onClick={() => setPreferencesOpen(true)}
+          className="fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg z-50"
+        >
+          🍪 Cookies
+        </button>
+      )}
+
+      {/* Modal de preferencias */}
+      {preferencesOpen && (
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+          <div className="bg-white text-black p-6 rounded-xl shadow-xl max-w-sm w-full flex flex-col gap-4">
+            <p className="text-lg font-bold text-center">Configuración de Cookies</p>
+
+            <label className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={preferences.analytics}
+                onChange={(e) => setPreferences((p) => ({ ...p, analytics: e.target.checked }))}
+              /> Cookies de Analítica
+            </label>
+            <label className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={preferences.marketing}
+                onChange={(e) => setPreferences((p) => ({ ...p, marketing: e.target.checked }))}
+              /> Cookies de Marketing
+            </label>
+
+            <div className="flex justify-center gap-3 mt-4">
+              <button onClick={acceptPreferences} className="bg-blue-600 text-white px-4 py-2 rounded">Guardar</button>
+              <button onClick={acceptAll} className="bg-green-600 text-white px-4 py-2 rounded">Aceptar todo</button>
+              <button onClick={rejectAll} className="bg-red-600 text-white px-4 py-2 rounded">Rechazar</button>
+            </div>
+          </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
