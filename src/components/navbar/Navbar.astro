@@ -41,10 +41,31 @@ const options = [
     </div>
 
     <div class="space-y-4">
-      <a href={`/${lang}/`} class="block text-lg font-semibold text-white hover:bg-gray-800 p-2 rounded">{t("navbar.home")}</a>
-      <a href={`/${lang}/about`} class="block text-lg font-semibold text-white hover:bg-gray-800 p-2 rounded">{t("navbar.about")}</a>
-      <a href={`/${lang}/menu`} class="block text-lg font-semibold text-white hover:bg-gray-800 p-2 rounded">{t("navbar.menu")}</a>
-      <a href={`/${lang}/contact`} class="block text-lg font-semibold text-white hover:bg-gray-800 p-2 rounded">{t("navbar.contact")}</a>
+
+      <a 
+        href={`/${lang}/`} 
+        class={`inline-flex flex-col items-center text-lg font-semibold p-2 rounded ${currentPath === `/${lang}/` ? 'active-mobile' : 'text-white'}`}>
+        <span>{t("navbar.home")}</span>
+      </a>     
+
+      <a 
+        href={`/${lang}/about`} 
+        class={`block text-lg font-semibold p-2 rounded relative ${currentPath.includes('/about') ? 'active-mobile' : 'text-white'}`}
+      >{t("navbar.about")}
+      </a>
+
+      <a 
+        href={`/${lang}/menu`} 
+        class={`block text-lg font-semibold p-2 rounded relative ${currentPath.includes('/menu') ? 'active-mobile' : 'text-white'}`}
+      >{t("navbar.menu")}
+      </a>
+
+      <a 
+        href={`/${lang}/contact`} 
+        class={`block text-lg font-semibold p-2 rounded relative ${currentPath.includes('/contact') ? 'active-mobile' : 'text-white'}`}
+      >{t("navbar.contact")}
+      </a>
+
       <div class="pt-4">
         <LangSelector lang={lang} options={options} client:load />
       </div>
