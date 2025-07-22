@@ -11,6 +11,7 @@ interface Props {
 const { lang } = Astro.props;
 const t = useTranslations(lang);
 const company = SITE_NAME;
+const currentPath = Astro.url.pathname;
 
 const options = [
   { code: 'es', label: t('navbar.lang_es') },
@@ -55,7 +56,7 @@ const options = [
 </div>
 
 <!-- Navbar fijo -->
-<header class="fixed top-0 left-0 w-full z-[50] bg-gradient-to-b from-black to-transparent">
+<header class="fixed top-0 left-0 w-full z-[50] bg-black">
   <nav class="flex items-center justify-between p-6 lg:px-8">
     <!-- Logo -->
     <div class="flex lg:flex-1">
@@ -75,10 +76,33 @@ const options = [
 
     <!-- Menú desktop -->
     <div class="hidden lg:flex lg:gap-x-12">
-      <a href={`/${lang}/`} class="text-xl font-semibold active">{t("navbar.home")}</a>
-      <a href={`/${lang}/about`} class="text-xl font-semibold text-white">{t("navbar.about")}</a>
-      <a href={`/${lang}/menu`} class="text-xl font-semibold text-white">{t("navbar.menu")}</a>
-      <a href={`/${lang}/contact`} class="text-xl font-semibold text-white">{t("navbar.contact")}</a>
+
+      <a 
+        href={`/${lang}/`} 
+        class={`text-xl font-semibold ${currentPath === `/${lang}/` ? 'active' : 'text-white'}`}>
+        {t("navbar.home")}
+      </a>
+
+      <a 
+        href={`/${lang}/about`} 
+        class={`text-xl font-semibold ${currentPath.includes('/about') ? 'active' : 'text-white'}`}>
+        {t("navbar.about")}
+      </a> 
+      
+      
+      <a 
+        href={`/${lang}/menu`} 
+        class={`text-xl font-semibold ${currentPath.includes('/menu') ? 'active' : 'text-white'}`}>
+        {t("navbar.menu")}
+      </a>
+
+
+      <a 
+        href={`/${lang}/contact`} 
+        class={`text-xl font-semibold ${currentPath.includes('/contact') ? 'active' : 'text-white'}`}>
+        {t("navbar.contact")}
+      </a>
+
     </div>
 
     <!-- LangSelector -->
