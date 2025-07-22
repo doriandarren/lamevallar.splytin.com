@@ -157,4 +157,9 @@
         display: none !important;
     }
 
+
+    .active{
+        @apply text-primary border-b-2;
+    }
+
 }
