@@ -14,12 +14,9 @@ const { lang, t, title } = getI18nProps(Astro.params, 'about');
 
 <!-- About Section -->
 <section id="about">
-  <div class="container mx-auto px-6 py-16">
-     <!-- Título general -->
-    <div class="mb-12 text-center max-w-3xl mx-auto" data-aos="fade-down" data-aos-duration="1000">
-      <h1 class="text-4xl font-bold text-primary mb-4">{t('about.heading')}</h1>
-      <p class="text-lg text-neutral-light">{t('about.description')}</p>
-    </div>
+  <div>
+    <h2>{t("about.title")}</h2>
+    <p class="text-center mb-15">{t("about.description")}</p>
     
     <!-- Fila 1 -->
     <div class="about-row flex flex-wrap items-center justify-center md:justify-between">
