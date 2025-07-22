@@ -5,8 +5,7 @@
 - Crear el favicon (png)
 - Reparar la imagen del menú
 - Navbar cambie de color cuando haga scroll
-- Hacer lading page 
-- Colocar título en el componente 
+- Hacer lading page
 - En el navbar la class active por componente 
 
 
