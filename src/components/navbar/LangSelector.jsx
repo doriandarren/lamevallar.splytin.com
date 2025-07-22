@@ -3,7 +3,7 @@ import { useTranslations } from '../../i18n/utils';
 
 
 /**
- * @param {{ lang: string, options: { code: string, label: string }[ }}
+ * @param {{ lang: string, options: { code: string, label: string }[] }}
  */
 export default function LangSelector({ lang, options }) {
 
@@ -18,7 +18,7 @@ export default function LangSelector({ lang, options }) {
 
   return (
     <select
-      className="border rounded px-4 py-2 text-sm text-white"
+      className="border rounded px-4 py-2 text-sm text-black bg-white dark:bg-gray-800 dark:text-white"
       onChange={handleChange}
       defaultValue={lang}
     >
