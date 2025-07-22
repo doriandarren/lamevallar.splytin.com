@@ -45,7 +45,7 @@ export default function CookieButton() {
 
   return (
     <>
-      {/* Botón flotante */}
+      {/* Floating Button */}
       {!showModal && (
         <button
           onClick={() => setShowModal(true)}
@@ -59,7 +59,7 @@ export default function CookieButton() {
       {showModal && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-6 max-w-sm w-full flex flex-col gap-4 shadow-lg">
-            <p className="text-lg font-bold text-center">Preferencias de Cookies</p>
+            <p className="text-lg font-bold text-center">Cookie Preferences</p>
 
             <label className="flex gap-2 items-center">
               <input
@@ -69,7 +69,7 @@ export default function CookieButton() {
                   setPreferences((prev) => ({ ...prev, analytics: e.target.checked }))
                 }
               />
-              Cookies de Analítica
+              Analytics Cookies
             </label>
 
             <label className="flex gap-2 items-center">
@@ -80,13 +80,13 @@ export default function CookieButton() {
                   setPreferences((prev) => ({ ...prev, marketing: e.target.checked }))
                 }
               />
-              Cookies de Marketing
+              Marketing Cookies
             </label>
 
             <div className="flex flex-wrap gap-3 justify-center">
-              <button onClick={savePreferences} className="bg-blue-600 text-white px-4 py-2 rounded">Guardar</button>
-              <button onClick={acceptAll} className="bg-green-600 text-white px-4 py-2 rounded">Aceptar Todo</button>
-              <button onClick={rejectAll} className="bg-red-600 text-white px-4 py-2 rounded">Rechazar</button>
+              <button onClick={savePreferences} className="bg-blue-600 text-white px-4 py-2 rounded">Save</button>
+              <button onClick={acceptAll} className="bg-green-600 text-white px-4 py-2 rounded">Accept All</button>
+              <button onClick={rejectAll} className="bg-red-600 text-white px-4 py-2 rounded">Reject</button>
             </div>
           </div>
         </div>
